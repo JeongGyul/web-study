@@ -1,10 +1,13 @@
 import './App.css'
-import { Todo } from './components/Todo'
+import Todo from './components/Todo'
+import { TodoProvider } from './context/TodoContext'
 
 function App() {
   return (
     <div>
-      <Todo />
+      <TodoProvider>
+        <Todo />
+      </TodoProvider>
     </div>
   )
 }
